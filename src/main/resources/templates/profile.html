@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profil Utilisateur</title>
+</head>
+<body>
+<h2>Profil Google</h2>
+<img th:src="${picture}" width="100"/>
+<p><strong>Nom :</strong> <span th:text="${name}"></span></p>
+<p><strong>Email :</strong> <span th:text="${email}"></span></p>
+<a href="/logout">Se déconnecter</a>
+</body>
+</html>
